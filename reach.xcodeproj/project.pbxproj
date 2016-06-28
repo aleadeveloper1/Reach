@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6503F6D1D15AF8B00D53329 /* loginpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6503F6C1D15AF8B00D53329 /* loginpageViewController.swift */; };
 		C698BEF91D10E347006D3A8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C698BEF81D10E347006D3A8F /* AppDelegate.swift */; };
 		C698BEFB1D10E347006D3A8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C698BEFA1D10E347006D3A8F /* ViewController.swift */; };
 		C698BEFE1D10E347006D3A8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C698BEFC1D10E347006D3A8F /* Main.storyboard */; };
 		C698BF001D10E347006D3A8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C698BEFF1D10E347006D3A8F /* Assets.xcassets */; };
 		C698BF031D10E347006D3A8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C698BF011D10E347006D3A8F /* LaunchScreen.storyboard */; };
 		C698BF0E1D10E347006D3A8F /* reachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C698BF0D1D10E347006D3A8F /* reachTests.swift */; };
+		C698BF191D12FB1F006D3A8F /* RegisterpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C698BF181D12FB1F006D3A8F /* RegisterpageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C6503F6C1D15AF8B00D53329 /* loginpageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginpageViewController.swift; sourceTree = "<group>"; };
 		C698BEF51D10E347006D3A8F /* reach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C698BEF81D10E347006D3A8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C698BEFA1D10E347006D3A8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		C698BF091D10E347006D3A8F /* reachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C698BF0D1D10E347006D3A8F /* reachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reachTests.swift; sourceTree = "<group>"; };
 		C698BF0F1D10E347006D3A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C698BF181D12FB1F006D3A8F /* RegisterpageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterpageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				C698BEFF1D10E347006D3A8F /* Assets.xcassets */,
 				C698BF011D10E347006D3A8F /* LaunchScreen.storyboard */,
 				C698BF041D10E347006D3A8F /* Info.plist */,
+				C698BF181D12FB1F006D3A8F /* RegisterpageViewController.swift */,
+				C6503F6C1D15AF8B00D53329 /* loginpageViewController.swift */,
 			);
 			path = reach;
 			sourceTree = "<group>";
@@ -198,6 +204,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C698BEFB1D10E347006D3A8F /* ViewController.swift in Sources */,
+				C6503F6D1D15AF8B00D53329 /* loginpageViewController.swift in Sources */,
+				C698BF191D12FB1F006D3A8F /* RegisterpageViewController.swift in Sources */,
 				C698BEF91D10E347006D3A8F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +396,7 @@
 				C698BF141D10E347006D3A8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C698BF151D10E347006D3A8F /* Build configuration list for PBXNativeTarget "reachTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +405,7 @@
 				C698BF171D10E347006D3A8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

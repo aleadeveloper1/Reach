@@ -10,8 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var myactivityindicator: UIActivityIndicatorView!
+    
+    @IBOutlet weak var welcomelabel: UILabel!
+    
+    @IBOutlet weak var loginbutton: UIButton!
+    @IBOutlet weak var registerbutton: UIButton!
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "light-blue-backgrounds-2.jpg")!)
+        
+    
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -19,7 +33,38 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewDidAppear(animated: Bool) {
+    }
+    
+    
+    @IBAction func registerbuttontapped(sender: AnyObject) {
+        
+        self.myactivityindicator.startAnimating();
+        self.myactivityindicator.hidden = false;
+        welcomelabel.hidden = false
+        loginbutton.hidden = true
+        registerbutton.hidden = true
+        self.myactivityindicator.center = self.view.center;
+        self.performSegueWithIdentifier("registerkeytappedhomepage", sender: self)
+       
+    }
+    
+    @IBAction func loginbuttontapped(sender: AnyObject) {
+        self.myactivityindicator.startAnimating();
+        self.myactivityindicator.hidden = false;
+        
+    
+    
+        welcomelabel.hidden = false
+        loginbutton.hidden = true
+        registerbutton.hidden = true
+        self.myactivityindicator.center = self.view.center;
+    
+    
 
-
+        self.performSegueWithIdentifier("hometologin", sender: self)    }
+    
 }
+
 
