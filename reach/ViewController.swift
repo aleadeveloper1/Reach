@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var myactivityindicator: UIActivityIndicatorView!
@@ -15,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var welcomelabel: UILabel!
     
     @IBOutlet weak var loginbutton: UIButton!
+   
     @IBOutlet weak var registerbutton: UIButton!
     
     
@@ -23,7 +25,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "light-blue-backgrounds-2.jpg")!)
+        
+FBSDKLoginButton; *loginButton = [[FBSDKLoginButton alloc] init;];
+        
         
     
         // Do any additional setup after loading the view, typically from a nib.
@@ -34,8 +38,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(animated: Bool) {
-    }
+   
+    
     
     
     @IBAction func registerbuttontapped(sender: AnyObject) {
@@ -51,11 +55,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func loginbuttontapped(sender: AnyObject) {
+        
         self.myactivityindicator.startAnimating();
         self.myactivityindicator.hidden = false;
         
-    
-    
         welcomelabel.hidden = false
         loginbutton.hidden = true
         registerbutton.hidden = true
@@ -63,7 +66,7 @@ class ViewController: UIViewController {
     
     
 
-        self.performSegueWithIdentifier("hometologin", sender: self)    }
+        self.performSegueWithIdentifier("hometologin", sender: self)  }
     
 }
 

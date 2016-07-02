@@ -10,7 +10,11 @@ import UIKit
 
 class loginpageViewController: UIViewController {
     
+    @IBOutlet weak var emailtextbox: UITextField!
 
+    @IBOutlet weak var passwordtextbox: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,15 +26,15 @@ class loginpageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+//I want my register button to link to my register page
+    @IBAction func Registerbuttontapped(sender: AnyObject) {
+        performSegueWithIdentifier("registerbuttontapped2", sender: self)
+  }
+      
+// I want my Enter button to link to my Tabviewcontroller and only access is granted for right combination of username and password. Need to store usernames and passwords in some string from register page
+        
+         @IBAction func Enterbuttontapped(sender: AnyObject) {
+            
+        
+     }
 }

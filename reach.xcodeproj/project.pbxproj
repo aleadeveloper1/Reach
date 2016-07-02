@@ -15,6 +15,10 @@
 		C698BF031D10E347006D3A8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C698BF011D10E347006D3A8F /* LaunchScreen.storyboard */; };
 		C698BF0E1D10E347006D3A8F /* reachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C698BF0D1D10E347006D3A8F /* reachTests.swift */; };
 		C698BF191D12FB1F006D3A8F /* RegisterpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C698BF181D12FB1F006D3A8F /* RegisterpageViewController.swift */; };
+		C6F072C01D2723E60084B773 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F072BD1D2723E60084B773 /* FBSDKCoreKit.framework */; };
+		C6F072C21D2723E60084B773 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F072BF1D2723E60084B773 /* FBSDKShareKit.framework */; };
+		C6F072C81D27251F0084B773 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F072C51D27251F0084B773 /* FBSDKLoginKit.framework */; };
+		C6F072CB1D274D040084B773 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F072CA1D274D040084B773 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		C698BF0D1D10E347006D3A8F /* reachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reachTests.swift; sourceTree = "<group>"; };
 		C698BF0F1D10E347006D3A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C698BF181D12FB1F006D3A8F /* RegisterpageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterpageViewController.swift; sourceTree = "<group>"; };
+		C6F072BD1D2723E60084B773 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		C6F072BE1D2723E60084B773 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		C6F072BF1D2723E60084B773 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		C6F072C41D27251F0084B773 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		C6F072C51D27251F0084B773 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		C6F072C61D27251F0084B773 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		C6F072CA1D274D040084B773 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F072CB1D274D040084B773 /* Social.framework in Frameworks */,
+				C6F072C81D27251F0084B773 /* FBSDKLoginKit.framework in Frameworks */,
+				C6F072C01D2723E60084B773 /* FBSDKCoreKit.framework in Frameworks */,
+				C6F072C21D2723E60084B773 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +81,7 @@
 				C698BEF71D10E347006D3A8F /* reach */,
 				C698BF0C1D10E347006D3A8F /* reachTests */,
 				C698BEF61D10E347006D3A8F /* Products */,
+				C6F072C31D2723FF0084B773 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +97,9 @@
 		C698BEF71D10E347006D3A8F /* reach */ = {
 			isa = PBXGroup;
 			children = (
+				C6F072C41D27251F0084B773 /* FBSDKCoreKit.framework */,
+				C6F072C51D27251F0084B773 /* FBSDKLoginKit.framework */,
+				C6F072C61D27251F0084B773 /* FBSDKShareKit.framework */,
 				C698BEF81D10E347006D3A8F /* AppDelegate.swift */,
 				C698BEFA1D10E347006D3A8F /* ViewController.swift */,
 				C698BEFC1D10E347006D3A8F /* Main.storyboard */,
@@ -101,6 +120,17 @@
 			);
 			path = reachTests;
 			sourceTree = "<group>";
+		};
+		C6F072C31D2723FF0084B773 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6F072CA1D274D040084B773 /* Social.framework */,
+				C6F072BD1D2723E60084B773 /* FBSDKCoreKit.framework */,
+				C6F072BF1D2723E60084B773 /* FBSDKShareKit.framework */,
+				C6F072BE1D2723E60084B773 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -335,10 +365,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/reach",
+				);
 				INFOPLIST_FILE = reach/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/FBSDKCoreKit.framework",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MDIndustries.reach;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "reach/reach-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,10 +388,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/reach",
+				);
 				INFOPLIST_FILE = reach/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/FBSDKCoreKit.framework",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MDIndustries.reach;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "reach/reach-Bridging-Header.h";
 			};
 			name = Release;
 		};
